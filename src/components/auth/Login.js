@@ -31,6 +31,7 @@ const Login = ({ history }) => {
       refPassword.current.value.trim() === ""
     ) {
       mostrarAlerta("Todos los campos son obligatorios", "alerta-error");
+      return;
     }
     //Pasar los datos al action
     iniciarSesion({
